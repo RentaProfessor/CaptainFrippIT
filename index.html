@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaptainFripp Support</title>
+    <title>Support Center</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>CaptainFripp Support</h1>
+            <h1>Support Center</h1>
             <p>We're here to help you with any issues</p>
         </header>
 
         <main>
             <form action="https://formspree.io/f/xandgjnk" method="POST">
                 <h2>Contact Us</h2>
+                
+                <!-- Hidden fields for Formspree -->
+                <input type="hidden" name="_subject" value="New Support Request">
+                <input type="hidden" name="_next" value="?success=true">
+                <input type="hidden" name="_captcha" value="false">
                 
                 <div class="form-group">
                     <label for="name">Name *</label>
@@ -39,7 +44,18 @@
                 
                 <button type="submit">Send Message</button>
             </form>
+            
+            <div id="success-message" style="display: none; background: #d4edda; color: #155724; padding: 10px; border-radius: 4px; margin-top: 10px;">
+                Thank you! Your message has been sent successfully.
+            </div>
         </main>
     </div>
+    
+    <script>
+        // Show success message if redirected back from Formspree
+        if (window.location.search.includes('success=true')) {
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
