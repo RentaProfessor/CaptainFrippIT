@@ -1,13 +1,14 @@
 {
   "name": "captain-fripp-support",
   "version": "1.0.0",
-  "description": "Simple CaptainFripp support page",
+  "description": "Static CaptainFripp support page - no build required",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'No build needed - static site'",
-    "start": "echo 'Static site - serve index.html'"
+    "build": "echo 'STATIC SITE - NO BUILD NEEDED' && exit 0",
+    "start": "echo 'STATIC SITE - SERVE index.html' && exit 0"
   },
-  "keywords": ["support", "static", "formspree"],
+  "keywords": ["static", "html", "css", "formspree"],
   "author": "CaptainFripp",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "static"
 }
