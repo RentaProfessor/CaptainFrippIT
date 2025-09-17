@@ -87,3 +87,35 @@ button {
 button:hover {
     background: #2980b9;
 }
+
+/* Privacy page styles */
+.privacy-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+.privacy-content h2 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.privacy-content h2:first-child {
+    margin-top: 0;
+}
+
+.privacy-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.privacy-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.privacy-content a:hover {
+    text-decoration: underline;
+}
