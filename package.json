@@ -1,0 +1,13 @@
+{
+  "name": "captain-fripp-support",
+  "version": "1.0.0",
+  "description": "Simple CaptainFripp support page",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build needed - static site'",
+    "start": "echo 'Static site - serve index.html'"
+  },
+  "keywords": ["support", "static", "formspree"],
+  "author": "CaptainFripp",
+  "license": "MIT"
+}
