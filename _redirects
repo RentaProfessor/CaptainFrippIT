@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# Redirect all 404s to index.html for SPA behavior
+/*    /index.html   200
+
+# Force HTTPS
+http://captain-fripp-support.pages.dev/*  https://captain-fripp-support.pages.dev/:splat  301!

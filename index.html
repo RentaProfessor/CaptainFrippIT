@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center</title>
+    <meta name="description" content="Professional support center. Get help with technical issues and questions. We'll get back to you as soon as possible.">
+    <meta name="keywords" content="support, technical support, help, contact, assistance">
+    <meta name="author" content="Support Team">
+    <meta property="og:title" content="Support Center">
+    <meta property="og:description" content="Professional support center. Get help with technical issues and questions.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Support Center">
+    <meta name="twitter:description" content="Professional support center. Get help with technical issues and questions.">
+    <link rel="canonical" href="https://support-center.pages.dev/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://formspree.io">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-headset"></i>
+                <h1>Support Center</h1>
+            </div>
+            <p class="tagline">Professional Support Services</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section">
+                <h2>We're Here to Help</h2>
+                <p class="hero-description">
+                    Need assistance? We're committed to providing you with the best support experience. 
+                    Our team will get back to you as soon as possible.
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h3>Get in Touch</h3>
+                <p class="form-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <form id="contact-form" action="https://formspree.io/f/xandgjnk" method="POST" class="contact-form">
+                    <!-- Hidden field for Formspree organization -->
+                    <input type="hidden" name="_subject" value="New Support Request from Support Center">
+                    <input type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Enter a brief subject for your inquiry">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please describe your issue or question in detail..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="priority">Priority Level</label>
+                        <select id="priority" name="priority">
+                            <option value="low">Low - General question</option>
+                            <option value="medium" selected>Medium - Minor issue</option>
+                            <option value="high">High - App not working</option>
+                            <option value="urgent">Urgent - Critical issue</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+                
+                <div id="form-status" class="form-status"></div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="additional-info">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Response Time</h4>
+                    <p>We typically respond within 24 hours during business days</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Privacy</h4>
+                    <p>Your information is secure and will never be shared</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>Our support team is available around the clock</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Support Center. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#help">Help Center</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
